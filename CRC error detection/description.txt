@@ -1,1 +1,1 @@
-# implementation of an error-detection mechanism using the standard CRC algorithm.
+implementation of an error-detection mechanism using the standard CRC algorithm.
