@@ -6,5 +6,5 @@ def Alter(correct_message , bit_position):
     return altered_msg
 
 
-correct_msg = 50  #110010
-print(bin(Alter(correct_msg , 3)))
+#correct_msg = 50  #110010
+#print(bin(Alter(correct_msg , 3)))
