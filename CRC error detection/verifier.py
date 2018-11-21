@@ -39,7 +39,11 @@ def Verifier(d,G):
 	else:
 		print('sent with error')
 
+def main():
+	data=input('input sent message:		')
+	divisor=input('enter the divisor polynomial coefficients:	')
+	Verifier(data,divisor)
 
-data=input('input sent message:		')
-divisor=input('enter the divisor polynomial coefficients:	')
-Verifier(data,divisor)
+
+if __name__ =='__main__':
+	main()

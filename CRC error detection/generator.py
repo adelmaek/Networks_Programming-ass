@@ -1,5 +1,5 @@
 def MultiBitXor(a,b):
-	result=""
+	result = ""
 	for i in range(0,len(b)):
 		if a[i] == b[i]:
 			result += '0'
@@ -34,15 +34,17 @@ def generator(M,P):
 	#M is the message before appending the zeros , P is the polynomial
 	noOfZeros= int(len(P)-1)
 	newMessage= bin(int(M,2) << int(noOfZeros))
-	print('newMessage: ',newMessage[2:len(newMessage)])
+	#print('newMessage: ',newMessage[2:len(newMessage)])
 	remainder = DivReminder(newMessage[2:len(newMessage)],P)
 	formatedRemainder = format(int(remainder,2),'#0{}b'.format(len(newMessage)))
-	print('formatedremainder: ',formatedRemainder[2:len(formatedRemainder)])
+	#print('formatedremainder: ',formatedRemainder[2:len(formatedRemainder)])
 	return MultiBitXor(formatedRemainder[2:len(formatedRemainder)],newMessage[2:len(newMessage)])
 
-
-message = input('input the message: ')
-polynomial = input('input the polynomial: ')
-print('message: ',int(message))
-print('transmittedMessage: ',generator(message,polynomial))
-#print(format(generator(message,polynomial), 'b'))
+def main():
+	message = input('input the message: ')
+	polynomial = input('input the polynomial: ')
+	print('message: ',int(message))
+	print('transmittedMessage: ',generator(message,polynomial))
+	#print(format(generator(message,polynomial), 'b'))
+if __name__ =='__main__':
+	main()
