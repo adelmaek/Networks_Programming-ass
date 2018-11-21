@@ -1,5 +1,5 @@
 def Alter(correct_message , bit_position):
-    correct_message = int(correct_message)
+    correct_message = int(correct_message , 2)
     print(correct_message)
     bit_position = int(bit_position)
     num_bits = correct_message.bit_length()
