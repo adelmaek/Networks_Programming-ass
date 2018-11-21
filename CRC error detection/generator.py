@@ -32,11 +32,19 @@ def DivReminder(d,G):
 
 def generator(M,P):
 	#M is the message before appending the zeros , P is the polynomial
+	# print("M:"+ M)
+	# print("P:"+ P+'x')
+	# print(len(P))
+	# print(int(len(P)))
 	noOfZeros= int(len(P)-1)
+	# print("no of zeros: "+str(noOfZeros))
 	newMessage= bin(int(M,2) << int(noOfZeros))
+	# print("new msg: "+ newMessage)
 	#print('newMessage: ',newMessage[2:len(newMessage)])
 	remainder = DivReminder(newMessage[2:len(newMessage)],P)
+	# print("Reminder: "+remainder)
 	formatedRemainder = format(int(remainder,2),'#0{}b'.format(len(newMessage)))
+	# print("formated Reminder"+ formatedRemainder)
 	#print('formatedremainder: ',formatedRemainder[2:len(formatedRemainder)])
 	return MultiBitXor(formatedRemainder[2:len(formatedRemainder)],newMessage[2:len(newMessage)])
 

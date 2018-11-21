@@ -8,7 +8,7 @@ def Alter(correct_message , bit_position):
         altered_msg =  correct_message ^ error_bit
     else :
         altered_msg =  correct_message
-    print(altered_msg)
+    print(str(bin(altered_msg)))
     return str(altered_msg)
 
 

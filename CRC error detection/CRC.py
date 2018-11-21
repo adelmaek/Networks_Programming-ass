@@ -12,8 +12,13 @@ def main():
         break
     message = ifhand.readline()
     genFunc = ifhand.readline()
-    print("message: "+ message)
-    print("genFunc: "+genFunc)
+    ## handling wrong inputs-> eg: extra spaces or \n
+    message= message.replace(" ","")
+    message = message.replace("\n",'')
+    genFunc = genFunc.replace(" ","")
+    genFunc = genFunc.replace("\n","")
+
+
     while True:
         print("Select command:\nGenerator only -> 1\nGenerator-verifier -> 2\nGenerator-Verifier-Alter-Verifier->3\n")
         command = input("Enter Command number:")
