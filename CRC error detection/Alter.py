@@ -1,7 +1,10 @@
 def Alter(correct_message , bit_position):
     num_bits = correct_message.bit_length()
-    error_bit = 1 << (num_bits - bit_position)
-    altered_msg = correct_msg ^ error_bit
+    if (bit_position < correct_message.bit_length()) :
+        error_bit = 1 << (num_bits - bit_position)
+        altered_msg = correct_message ^ error_bit
+    else :
+        altered_msg = correct_message
 
     return altered_msg
 
