@@ -1,6 +1,4 @@
-10011011
-100
+111110
+111
 
-transmitted: 1001101100
-NOTE:
-This test case the reminder is zero, Also some errors are not detected by crc algorithm so altering a bit may not be detected.
+transmitted: 11111011
