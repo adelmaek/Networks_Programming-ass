@@ -1,4 +1,4 @@
 111110
 111
 
-transmitted: 11111011
+transmitted message : 11111011
