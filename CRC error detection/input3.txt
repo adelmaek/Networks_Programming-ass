@@ -1,0 +1,5 @@
+1101011111
+10011
+
+expected transmitted msg: 11010111110010
+
