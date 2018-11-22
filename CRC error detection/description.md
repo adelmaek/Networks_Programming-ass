@@ -1,5 +1,0 @@
-implementation of an error-detection mechanism using the standard CRC algorithm.
- 1- Generator.py: takes message and generator function, outputs the transmitted message.
- 2- Verifier.py: takes Transmitted message and verifies that it is received successuflly.
- 3- Alter.py: takes transmitted message and the position of bit to alter, outputs a message with error.
- 4- CRC.py: Run different queries the selected test case.
