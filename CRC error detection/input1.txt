@@ -1,6 +1,0 @@
-10000
-1 1 
-
-transmitted:100001
-alter 1:error, reminder=1
-alter 2:error, reminder=1
