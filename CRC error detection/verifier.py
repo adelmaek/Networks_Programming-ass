@@ -40,8 +40,8 @@ def Verifier(d,G):
 		print('message is not correct')
 
 def main():
-	data=input('input sent message:		')
-	divisor=input('enter the divisor polynomial coefficients:	')
+	data=input()
+	divisor=input()
 	Verifier(data,divisor)
 
 

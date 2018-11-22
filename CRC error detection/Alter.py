@@ -1,3 +1,4 @@
+import sys
 def Alter(correct_message , bit_position):
     correct_message = int(correct_message , 2)
     #print(correct_message)
@@ -8,9 +9,19 @@ def Alter(correct_message , bit_position):
         altered_msg =  correct_message ^ error_bit
     else :
         altered_msg =  correct_message
-    #print('altered message: ' + bin(altered_msg)[2:].zfill(correct_message.bit_length()))
     return bin(altered_msg)[2:].zfill(correct_message.bit_length())
 
 
-#correct_msg = 50  #110010
-#print(bin(Alter(correct_msg , 3)))
+def main(bp):
+    cm = input()
+    gen = input()
+    al = Alter(cm,bp)
+    Vi = al+'\n'+gen+'\n'
+    print(Vi)
+
+
+if __name__ =='__main__':
+    a = int(sys.argv[1])
+    main(a)
+
+
