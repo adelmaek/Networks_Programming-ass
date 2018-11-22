@@ -35,9 +35,9 @@ def Verifier(d,G):
 	temp='0'*len(G)
 	reminder=DivReminder(d,G)
 	if reminder==temp:
-		print('sent succesfully')
+		print('message is correct')
 	else:
-		print('sent with error')
+		print('message is not correct')
 
 def main():
 	data=input('input sent message:		')
