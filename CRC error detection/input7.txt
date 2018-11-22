@@ -1,4 +1,4 @@
 1001
 1011
 
-expected msg: 1001110
+transmitted:1001110
